@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <!-- Main leaf shape -->
+  <path d="M100 30C60 50 40 90 60 140C80 190 140 190 160 140C180 90 160 50 120 30C110 30 110 30 100 30Z" fill="url(#paint0_radial)" fill-opacity="0.3"/>
+  
+  <!-- Inner leaf -->
+  <path d="M100 50C70 65 60 95 75 130C90 165 130 165 145 130C160 95 150 65 120 50C110 50 110 50 100 50Z" fill="url(#paint1_linear)" fill-opacity="0.25"/>
+  
+  <!-- Stem -->
+  <path d="M100 130V170" stroke="#2E7D32" stroke-width="3" stroke-opacity="0.2"/>
+  
+  <!-- Main vein -->
+  <path d="M100 50V130" stroke="#388E3C" stroke-width="1.5" stroke-opacity="0.3"/>
+  
+  <!-- Side veins -->
+  <path d="M100 60C85 75 75 90 75 130" stroke="#388E3C" stroke-opacity="0.2" stroke-width="1"/>
+  <path d="M100 60C115 75 125 90 125 130" stroke="#388E3C" stroke-opacity="0.2" stroke-width="1"/>
+  <path d="M100 90C85 100 75 115 75 130" stroke="#388E3C" stroke-opacity="0.15" stroke-width="0.75"/>
+  <path d="M100 90C115 100 125 115 125 130" stroke="#388E3C" stroke-opacity="0.15" stroke-width="0.75"/>
+  
+  <!-- Leaf highlight -->
+  <path d="M85 70C95 80 105 90 115 100" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+  
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(100 100) rotate(90) scale(80)">
+      <stop stop-color="#81C784"/>
+      <stop offset="1" stop-color="#81C784" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint1_linear" x1="100" y1="50" x2="100" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A5D6A7"/>
+      <stop offset="1" stop-color="#81C784" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+</svg> 

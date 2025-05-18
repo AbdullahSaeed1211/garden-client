@@ -23,7 +23,6 @@ export function Marquee({
   skew = 0,
   size = "default"
 }: MarqueeProps) {
-  const [containerWidth, setContainerWidth] = useState(0);
   const [contentWidth, setContentWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -41,7 +40,6 @@ export function Marquee({
   useEffect(() => {
     const updateWidths = () => {
       if (containerRef.current && contentRef.current) {
-        setContainerWidth(containerRef.current.offsetWidth);
         setContentWidth(contentRef.current.offsetWidth);
 
         // Calculate how many duplicates we need to fill the container

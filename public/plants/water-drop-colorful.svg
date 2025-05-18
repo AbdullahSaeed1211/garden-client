@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <path d="M60 13.45l28.3 28.3a40 40 0 1 1-56.6 0z" fill="url(#water-gradient)" stroke="#0D47A1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Add water ripples -->
+  <path d="M60 30C48 42 43 55 45 70" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 40C72 52 77 65 75 80" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  
+  <!-- Add water splash at top -->
+  <path d="M55 20C50 15 52 10 60 8C68 10 70 15 65 20" fill="#81D4FA" stroke="#29B6F6" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Add highlights -->
+  <circle cx="45" cy="60" r="5" fill="white" opacity="0.2"/>
+  <circle cx="70" cy="75" r="3" fill="white" opacity="0.3"/>
+  <circle cx="55" cy="85" r="4" fill="white" opacity="0.15"/>
+  
+  <defs>
+    <linearGradient id="water-gradient" x1="30" y1="13.45" x2="90" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#29B6F6"/>
+      <stop offset="0.4" stop-color="#1E88E5"/>
+      <stop offset="1" stop-color="#0D47A1"/>
+    </linearGradient>
+  </defs>
+</svg> 

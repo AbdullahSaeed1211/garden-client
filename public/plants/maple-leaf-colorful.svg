@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <path d="M60 10L47.5 22.5L60 35L72.5 22.5L60 10Z" fill="url(#maple-top)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22.5 47.5L35 60L22.5 72.5L10 60L22.5 47.5Z" fill="url(#maple-left)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M97.5 47.5L85 60L97.5 72.5L110 60L97.5 47.5Z" fill="url(#maple-right)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 85L47.5 97.5L60 110L72.5 97.5L60 85Z" fill="url(#maple-bottom)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 35L35 60L60 85L85 60L60 35Z" fill="url(#maple-center)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 10L35 60L60 110L85 60L60 10Z" fill="url(#maple-main)" stroke="#AD1457" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  
+  <defs>
+    <linearGradient id="maple-top" x1="47.5" y1="10" x2="72.5" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="1" stop-color="#FF5252"/>
+    </linearGradient>
+    <linearGradient id="maple-left" x1="10" y1="47.5" x2="35" y2="72.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="1" stop-color="#FF5252"/>
+    </linearGradient>
+    <linearGradient id="maple-right" x1="85" y1="47.5" x2="110" y2="72.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="1" stop-color="#FF8A80"/>
+    </linearGradient>
+    <linearGradient id="maple-bottom" x1="47.5" y1="85" x2="72.5" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E53935"/>
+      <stop offset="1" stop-color="#FF8A80"/>
+    </linearGradient>
+    <linearGradient id="maple-center" x1="35" y1="35" x2="85" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EF5350"/>
+      <stop offset="1" stop-color="#E57373"/>
+    </linearGradient>
+    <linearGradient id="maple-main" x1="35" y1="10" x2="85" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C62828"/>
+      <stop offset="0.5" stop-color="#EF5350"/>
+      <stop offset="1" stop-color="#EF9A9A"/>
+    </linearGradient>
+  </defs>
+</svg> 

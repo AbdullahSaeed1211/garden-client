@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <path d="M60 35C60 35 47.5 22.5 35 35S35 60 47.5 47.5 60 35 60 35z" fill="url(#clover-gradient1)" stroke="#1B5E20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 35C60 35 72.5 22.5 85 35s0 25-12.5 12.5S60 35 60 35z" fill="url(#clover-gradient2)" stroke="#1B5E20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 85C60 85 47.5 97.5 35 85s0-25 12.5-12.5 12.5 12.5 12.5 12.5z" fill="url(#clover-gradient3)" stroke="#1B5E20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 85c0 0 12.5 12.5 25 0s0-25-12.5-12.5-12.5 12.5-12.5 12.5z" fill="url(#clover-gradient4)" stroke="#1B5E20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="60" y1="35" x2="60" y2="85" stroke="#33691E" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Add decorative dots -->
+  <circle cx="44" cy="44" r="2" fill="white" opacity="0.6"/>
+  <circle cx="76" cy="44" r="2" fill="white" opacity="0.6"/>
+  <circle cx="44" cy="76" r="2" fill="white" opacity="0.6"/>
+  <circle cx="76" cy="76" r="2" fill="white" opacity="0.6"/>
+  
+  <defs>
+    <linearGradient id="clover-gradient1" x1="35" y1="22.5" x2="60" y2="47.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="clover-gradient2" x1="60" y1="22.5" x2="85" y2="47.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="clover-gradient3" x1="35" y1="72.5" x2="60" y2="97.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="clover-gradient4" x1="60" y1="72.5" x2="85" y2="97.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66BB6A"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+  </defs>
+</svg> 

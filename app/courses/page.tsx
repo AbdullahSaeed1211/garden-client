@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
@@ -100,16 +99,12 @@ export default function CoursesPage() {
                           {course.description}
                         </p>
                         <div className="flex justify-between items-center mt-4">
-                          <motion.span 
-                            className="inline-flex items-center text-primary font-medium"
-                            initial={{ x: 0 }}
-                            whileHover={{ x: 5 }}
-                          >
+                          <span className="inline-flex items-center text-primary font-medium group-hover:translate-x-1 transition-transform duration-300">
                             Learn more
                             <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
-                          </motion.span>
+                          </span>
                           
                           <span className="text-accent font-bold">
                             Enroll Now

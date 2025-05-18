@@ -22,7 +22,7 @@ export function AnimatedTestimonial({ quote, author, role, avatarSrc, stars = 5 
             <StarIcon key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
           ))}
         </div>
-        <p className="mb-6 text-base text-muted-foreground md:text-lg">"{quote}"</p>
+        <p className="mb-6 text-base text-muted-foreground md:text-lg">&ldquo;{quote}&rdquo;</p>
         <div className="flex items-center gap-4">
           <Image
             src={avatarSrc}

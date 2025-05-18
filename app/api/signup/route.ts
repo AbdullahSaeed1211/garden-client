@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     }
 
     // Send confirmation email to the user
-    const userEmailData = await resend.emails.send({
+    await resend.emails.send({
       from: 'Sproutly Course <noreply@resend.abdullahsaeed.me>',
       to: email,
       subject: 'Welcome to Sproutly Urban Gardening Course!',
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     });
 
     // Send notification to the owner/admin
-    const ownerEmailData = await resend.emails.send({
+    await resend.emails.send({
       from: 'Sproutly Notifications <noreply@resend.abdullahsaeed.me>',
       to: process.env.ADMIN_EMAIL || 'owner@example.com', // Replace with actual admin email
       subject: 'New Course Signup',

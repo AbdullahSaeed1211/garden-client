@@ -9,7 +9,6 @@ interface ScrollRevealProps {
   direction?: "up" | "down" | "left" | "right";
   delay?: number;
   duration?: number;
-  staggerChildren?: boolean;
   className?: string;
 }
 
@@ -18,7 +17,6 @@ export function ScrollReveal({
   direction = "up",
   delay = 0,
   duration = 0.5,
-  staggerChildren = false,
   className
 }: ScrollRevealProps) {
   const directionOffset = {

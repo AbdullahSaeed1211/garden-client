@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <path d="M40 15C20 35 20 65 40 90c20 25 50 25 70 5c-20 0-40-10-50-25c-10-15-10-35 0-50C70 5 85 0 105 0C85 -5 60 0 40 15z" fill="url(#leaf-gradient)" stroke="#33691E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 95C42.5 85 30 70 25 50" stroke="#43A047" stroke-width="3" stroke-linecap="round"/>
+  <path d="M25 50C30 52.5 35 60 40 72.5" stroke="#43A047" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Add decorative veins -->
+  <path d="M45 25C55 35 60 50 60 70" stroke="#33691E" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M60 55C70 45 80 40 90 40" stroke="#33691E" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M52 40C65 50 70 60 70 75" stroke="#33691E" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Add highlights -->
+  <path d="M50 25C45 30 42 40 45 50" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  <path d="M60 35C65 40 68 50 65 60" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="leaf-gradient" x1="20" y1="15" x2="110" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#81C784"/>
+      <stop offset="0.3" stop-color="#66BB6A"/>
+      <stop offset="0.7" stop-color="#4CAF50"/>
+      <stop offset="1" stop-color="#388E3C"/>
+    </linearGradient>
+  </defs>
+</svg> 

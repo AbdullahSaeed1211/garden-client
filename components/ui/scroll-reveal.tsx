@@ -61,6 +61,7 @@ export const ScrollReveal = ({
     if (isInView) {
       controls.start(getAnimatePosition());
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView, controls]);
 
   return (

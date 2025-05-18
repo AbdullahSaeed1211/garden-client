@@ -42,7 +42,7 @@ export default function Home() {
       <HeroSection />
       <AnimatedFeatures />
       <CourseSection />
-      <GardenInspiration />
+          <GardenInspiration />
       <TitledMarquee 
         title="Learn, Grow, Thrive" 
         items={["Urban Gardening", "Herb Gardens", "Vertical Growing", "Container Gardens", "Balcony Gardening", "Indoor Plants", "Community Gardens", "Organic Produce"]} 

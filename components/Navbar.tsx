@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Course", href: "#course" },
+  { name: "Home", href: "/" },
+  { name: "Courses", href: "/courses" },
   { name: "Projects", href: "#projects" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "About", href: "#about" },
