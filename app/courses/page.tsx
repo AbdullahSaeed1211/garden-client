@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
 import CreativeFooter from '@/components/CreativeFooter';
-import CourseRibbons from '@/components/CourseRibbons';
 
 export default function CoursesPage() {
   const courses = [
@@ -62,10 +61,6 @@ export default function CoursesPage() {
             </div>
           </ScrollReveal>
           
-          <div className="-mx-4 mb-16">
-            <CourseRibbons />
-          </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {courses.map((course, i) => (
               <ScrollReveal key={course.id} delay={i * 0.1}>
@@ -74,7 +69,7 @@ export default function CoursesPage() {
                     <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-gray-100">
                       <div className="relative h-64 overflow-hidden">
                         <Image 
-                          src={course.image} 
+                          src={course.image || "/project-herbs.jpg"} 
                           alt={course.title}
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -105,7 +100,6 @@ export default function CoursesPage() {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                           </span>
-                          
                           <span className="text-accent font-bold">
                             Enroll Now
                           </span>
