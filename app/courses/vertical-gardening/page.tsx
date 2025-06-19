@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
+import EnrollButton from '@/components/EnrollButton';
 import CreativeFooter from '@/components/CreativeFooter';
 
 export const metadata: Metadata = {
@@ -122,9 +123,9 @@ export default function VerticalGardeningPage() {
                   <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 mb-8">
                     <div className="text-center">
                       <h3 className="text-3xl font-bold text-gray-800 mb-4">{course.price}</h3>
-                      <button className="w-full bg-primary text-white font-medium py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors mb-4">
+                      <EnrollButton className="w-full bg-primary text-white font-medium py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors mb-4">
                         Enroll Now
-                      </button>
+                      </EnrollButton>
                       <p className="text-gray-500 text-sm mb-6">Enrollment closes in 21 days</p>
                     </div>
                     

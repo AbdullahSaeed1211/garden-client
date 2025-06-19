@@ -3,6 +3,6 @@ Allow: /
 
 # Sitemap
 Sitemap: https://sproutly.site/sitemap.xml
-
+ 
 # Crawl delay (optional)
 Crawl-delay: 1 
