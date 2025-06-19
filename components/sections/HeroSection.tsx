@@ -120,9 +120,9 @@ export default function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                  Grow Your<br />
+                  Turn Your Tiny Space Into a<br />
                   <span className="text-primary relative inline-block">
-                    <span className="relative z-10">Urban Garden</span>
+                    <span className="relative z-10">Food-Growing Goldmine</span>
                     <motion.span 
                       className="absolute bottom-0 left-0 h-3 bg-green-200 w-full -z-10"
                       initial={{ width: 0 }}
@@ -138,8 +138,8 @@ export default function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  Learn how to transform any urban space into a thriving garden oasis. 
-                  Join instructor Olivia for a hands-on 6-week course designed for green thumbs of all levels.
+                  Get fresh herbs, vegetables, and greens from your balcony, windowsill, or closet in just 6 weeks — 
+                  even if you&apos;ve killed every plant you&apos;ve ever touched.
                 </motion.p>
                 
                 <motion.div 

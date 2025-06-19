@@ -15,8 +15,55 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Sproutly - Urban Garden Course',
-  description: 'Learn how to transform any urban space into a thriving garden oasis with our 6-week online course.',
+  title: 'Sproutly - Urban Gardening Courses Online | Transform Your Space',
+  description: 'Learn urban gardening with expert-led online courses. Master container gardening, vertical gardens, and small space growing. Join 200+ students growing their green thumbs.',
+  keywords: 'urban gardening, container gardening, vertical gardening, small space gardening, online gardening course, balcony gardening, indoor plants',
+  authors: [{ name: 'Sproutly' }],
+  creator: 'Sproutly',
+  publisher: 'Sproutly',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://sproutly.site'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sproutly - Urban Gardening Courses Online',
+    description: 'Transform any urban space into a thriving garden oasis with our expert-led online courses.',
+    url: 'https://sproutly.site',
+    siteName: 'Sproutly',
+    images: [
+      {
+        url: '/hero-garden.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Urban garden transformation by Sproutly students',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sproutly - Urban Gardening Courses Online',
+    description: 'Transform any urban space into a thriving garden oasis with our expert-led online courses.',
+    creator: '@sproutly',
+    images: ['/hero-garden.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export default function RootLayout({

@@ -1,11 +1,40 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
+
+export const metadata: Metadata = {
+  title: 'Vertical Garden Design Course | Living Walls & Space Optimization | Sproutly',
+  description: 'Create stunning vertical gardens in 6 weeks! Learn living wall design, plant selection, irrigation systems, and space maximization. Intermediate level course.',
+  keywords: 'vertical gardening course, living walls, vertical garden design, space optimization, wall gardens, green walls',
+  alternates: {
+    canonical: '/courses/vertical-gardening',
+  },
+  openGraph: {
+    title: 'Vertical Garden Design Course | Sproutly',
+    description: 'Create stunning vertical gardens in 6 weeks! Learn living wall design, plant selection, irrigation systems, and space maximization.',
+    url: 'https://sproutly.site/courses/vertical-gardening',
+    images: [
+      {
+        url: '/project-vertical.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Vertical Garden Design Course by Sproutly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vertical Garden Design Course | Sproutly',
+    description: 'Create stunning vertical gardens in 6 weeks! Learn living wall design, plant selection, irrigation systems, and space maximization.',
+    images: ['/project-vertical.jpg'],
+  },
+};
 
 export default function VerticalGardeningPage() {
   const course = {

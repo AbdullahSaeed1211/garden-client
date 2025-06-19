@@ -1,11 +1,41 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
+
+export const metadata: Metadata = {
+  title: 'Culinary Herb Garden Course | Grow Your Own Herbs | Sproutly',
+  description: 'Learn to grow fresh culinary herbs at home in 4 weeks. Master herb gardening techniques and discover how to use them in cooking. Perfect for beginners.',
+  keywords: 'herb garden course, culinary herbs, growing herbs, herb gardening, cooking herbs, basil growing, organic herbs',
+  alternates: {
+    canonical: '/courses/herb-garden',
+  },
+  openGraph: {
+    title: 'Culinary Herb Garden Course | Sproutly',
+    description: 'Learn to grow fresh culinary herbs at home in 4 weeks. Master herb gardening techniques and discover how to use them in cooking.',
+    url: 'https://sproutly.site/courses/herb-garden',
+    images: [
+      {
+        url: '/project-herbs.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Culinary Herb Garden Course by Sproutly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Culinary Herb Garden Course | Sproutly',
+    description: 'Learn to grow fresh culinary herbs at home in 4 weeks. Master herb gardening techniques and discover how to use them in cooking.',
+    images: ['/project-herbs.jpg'],
+  },
+};
 
 export default function HerbGardenPage() {
   const course = {

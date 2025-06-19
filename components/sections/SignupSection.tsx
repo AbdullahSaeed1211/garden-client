@@ -40,23 +40,23 @@ export default function SignupSection() {
                 Join Today
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Start Your Garden Journey
+                Get $200+ Worth of Fresh Food Every Month
               </h2>
               <p className="text-base md:text-lg text-gray-600 mb-8">
-                Sign up for our 6-week course and transform your urban space into a thriving garden oasis. 
-                Learn from garden expert Olivia and join a community of passionate urban gardeners.
+                Join 200+ city dwellers who&apos;ve cracked the code to growing restaurant-quality herbs and vegetables 
+                in spaces smaller than a parking spot. Next cohort starts Monday.
               </p>
               
               <div className="bg-white rounded-xl shadow-lg border border-green-100 p-6">
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">What You&apos;ll Get:</h3>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">The Complete System ($2,000 value):</h3>
                 <ul className="space-y-4">
                   {[
-                    "Weekly live online sessions with Olivia",
-                    "Hands-on projects with personalized feedback",
-                    "Exclusive course materials and resources",
-                    "Access to our community of gardeners",
-                    "Lifetime access to course recordings",
-                    "Certificate of completion"
+                    "The 'Unkillable Plant' setup that guarantees success",
+                    "Space Multiplication System (2 sq ft → 20+ plants)",
+                    "$200/month grocery savings blueprint",
+                    "5-minute maintenance method (works while traveling)",
+                    "Year-round growing secrets (harvest in winter)",
+                    "Emergency plant rescue protocol (95% success rate)"
                   ].map((item, index) => (
                     <motion.li 
                       key={index}

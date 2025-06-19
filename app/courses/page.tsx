@@ -1,10 +1,39 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
 import CreativeFooter from '@/components/CreativeFooter';
+
+export const metadata: Metadata = {
+  title: 'Urban Gardening Courses | Learn Container & Vertical Gardening | Sproutly',
+  description: 'Explore our expert-led urban gardening courses. Learn container gardening, vertical gardens, herb growing, and small space techniques. 4-6 week courses for all skill levels.',
+  keywords: 'urban gardening courses, container gardening course, vertical gardening course, herb garden course, online gardening classes, small space gardening',
+  alternates: {
+    canonical: '/courses',
+  },
+  openGraph: {
+    title: 'Urban Gardening Courses | Sproutly',
+    description: 'Explore our expert-led urban gardening courses. Learn container gardening, vertical gardens, and small space techniques.',
+    url: 'https://sproutly.site/courses',
+    images: [
+      {
+        url: '/featured-course.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Sproutly urban gardening course overview',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Urban Gardening Courses | Sproutly',
+    description: 'Explore our expert-led urban gardening courses. Learn container gardening, vertical gardens, and small space techniques.',
+    images: ['/featured-course.jpg'],
+  },
+};
 
 export default function CoursesPage() {
   const courses = [

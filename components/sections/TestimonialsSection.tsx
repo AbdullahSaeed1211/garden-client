@@ -6,39 +6,39 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 // Formatted testimonials for the AnimatedTestimonials component
 const animatedTestimonials = [
   {
-    quote: "I was always intimidated by gardening in my small apartment, but Sproutly's courses gave me the confidence to start. Now my balcony is thriving with herbs and vegetables!",
+    quote: "I killed 17 plants before finding Sproutly. Now I harvest $150 worth of herbs and greens every month from my 4x4 fire escape. The 'unkillable setup' really works!",
     name: "Sarah Johnson",
-    designation: "Urban Apartment Gardener",
+    designation: "Software Engineer, Brooklyn",
     src: "/avatars/user1.png",
   },
   {
-    quote: "The container gardening course was exactly what I needed. I've transformed my patio into a productive garden space that also looks beautiful. Highly recommend!",
+    quote: "Week 2's space hack blew my mind. I went from 3 struggling plants to 28 thriving ones in the same 6 square feet. My tiny balcony now feeds my family of 4.",
     name: "Michael Chen",
-    designation: "Container Garden Enthusiast",
+    designation: "Dad of 2, San Francisco",
     src: "/avatars/user2.png",
   },
   {
-    quote: "As someone with no prior gardening experience, I was amazed at how accessible Sproutly made everything. Their step-by-step guidance helped me avoid common mistakes.",
+    quote: "The 5-minute maintenance system changed everything. I travel for work 2 weeks a month and my plants still look perfect when I return. Zero stress, maximum harvest.",
     name: "Emma Rodriguez",
-    designation: "First-time Gardener",
+    designation: "Marketing Consultant, Chicago",
     src: "/avatars/user3.png",
   },
   {
-    quote: "The vertical gardening techniques I learned completely transformed my small outdoor space. Now I'm growing more in a 3x3 space than I ever thought possible!",
+    quote: "I was spending $300/month on organic herbs. Now I grow better quality herbs for $15/month in my kitchen window. ROI in 3 weeks!",
     name: "David Kim",
-    designation: "Vertical Garden Specialist",
+    designation: "Chef, Los Angeles",
     src: "/avatars/user4.png",
   },
   {
-    quote: "The community aspect of Sproutly is what truly sets it apart. I've met so many other urban gardeners who share their knowledge and inspire me daily.",
+    quote: "The winter lighting trick is pure genius. While my neighbors buy wilted $8 kale, I'm harvesting fresh greens in January from my apartment. Mind = blown.",
     name: "Lisa Morgan",
-    designation: "Community Garden Organizer",
+    designation: "Teacher, Minneapolis",
     src: "/avatars/user5.png",
   },
   {
-    quote: "I never thought I could grow my own food in my tiny balcony, but after taking the container gardening course, I'm harvesting fresh vegetables every week!",
+    quote: "Day 1: Complete plant newbie. Week 6: Growing tomatoes in January in my closet. The emergency rescue protocol saved 5 plants I thought were dead.",
     name: "James Wilson",
-    designation: "Balcony Gardener",
+    designation: "Accountant, Seattle",
     src: "/avatars/user6.png",
   },
 ];
@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Community Voices
+            Why 200+ City Dwellers Trust Our System
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -73,8 +73,7 @@ export default function TestimonialsSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-3xl mx-auto"
           >
-            Hear from our community of urban gardeners who have transformed their spaces 
-            through the knowledge and skills gained in our course.
+            Real results from real people who went from &quot;black thumb&quot; to growing their own food in tiny spaces.
           </motion.p>
         </div>
         

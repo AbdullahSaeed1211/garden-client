@@ -7,43 +7,43 @@ import { Leaf, Sprout, Flower, Droplets, Sun, Mountain } from "lucide-react";
 const courseWeeks = [
   {
     week: 1,
-    title: "Gardening Fundamentals",
-    description: "Learn the basics of soil preparation, light requirements, and essential gardening tools for your urban setup.",
+    title: "The 'Unkillable Plant' Foundation",
+    description: "Skip years of trial and error. Get the exact soil, tools, and setup that guarantees your first plants survive (and thrive).",
     color: "bg-primary/20",
     icon: Sprout,
   },
   {
     week: 2,
-    title: "Container Gardening & Space Planning",
-    description: "Discover how to maximize limited space with vertical gardens, hanging plants, and strategic container placement.",
+    title: "Space Multiplication System",
+    description: "Turn 2 square feet into a 20-plant garden using our vertical growing hacks that apartment dwellers are raving about.",
     color: "bg-accent/20",
     icon: Leaf,
   },
   {
     week: 3,
-    title: "Growing Herbs & Vegetables",
-    description: "Master the techniques for growing culinary herbs and compact vegetables perfect for urban kitchens and balconies.",
+    title: "The $200/Month Grocery Hack",
+    description: "Grow the exact herbs and vegetables that will slash your grocery bill while upgrading your meals to restaurant quality.",
     color: "bg-chart-3/20",
     icon: Flower,
   },
   {
     week: 4,
-    title: "Watering & Maintenance",
-    description: "Develop sustainable watering routines and learn essential maintenance practices for healthy, thriving plants.",
+    title: "The 5-Minute Maintenance Method",
+    description: "My 'set and forget' watering system that keeps plants healthy even when you travel for weeks (no plant-sitters needed).",
     color: "bg-chart-4/20",
     icon: Droplets,
   },
   {
     week: 5,
-    title: "Light Management & Seasons",
-    description: "Understand seasonal planting cycles and techniques to optimize natural and artificial light in urban environments.",
+    title: "Year-Round Growth Secrets",
+    description: "The little-known lighting trick that lets you harvest fresh greens in winter while your neighbors eat wilted store produce.",
     color: "bg-secondary/20",
     icon: Sun,
   },
   {
     week: 6,
-    title: "Advanced Techniques & Troubleshooting",
-    description: "Explore advanced urban gardening methods and learn solutions for common plant diseases and pest problems.",
+    title: "Emergency Plant Rescue Protocol",
+    description: "Never lose another plant. The exact steps to diagnose and fix any problem before it kills your garden (works 95% of the time).",
     color: "bg-chart-5/20",
     icon: Mountain,
   },
@@ -94,7 +94,7 @@ export default function CourseSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Your Learning Journey
+            The Fastest Way to Go From Plant Killer to Plant Whisperer
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -103,8 +103,8 @@ export default function CourseSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground text-lg max-w-3xl mx-auto"
           >
-            Our 6-week curriculum is designed to take you from a complete beginner to a confident urban gardener,
-            with practical lessons and hands-on projects each week.
+            Follow our proven 6-week system that&apos;s already helped 200+ urban dwellers grow fresh food 
+            in spaces as small as a fire escape (even with zero gardening experience).
           </motion.p>
         </div>
         

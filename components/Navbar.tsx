@@ -8,9 +8,9 @@ import { Menu, X } from "lucide-react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
-  { name: "Projects", href: "#projects" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "About", href: "#about" },
+  { name: "Blog", href: "/blog" },
+  { name: "About", href: "/#about" },
+  { name: "FAQ", href: "/#faq" },
 ];
 
 export default function Navbar() {
@@ -65,7 +65,7 @@ export default function Navbar() {
             href="#signup"
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium rounded-lg px-6 py-2 transition-colors"
           >
-            Join Course
+            Start Growing →
           </Link>
         </div>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
               className="bg-primary text-primary-foreground font-medium rounded-lg px-6 py-3 transition-colors flex justify-center mx-4"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Join Course
+              Start Growing →
             </Link>
           </div>
         </div>

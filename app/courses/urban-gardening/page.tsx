@@ -1,11 +1,40 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
+
+export const metadata: Metadata = {
+  title: 'Urban Gardening Essentials Course | 6-Week Online Program | Sproutly',
+  description: 'Master urban gardening in 6 weeks! Learn container gardening, vertical gardens, and small space growing techniques. Beginner-friendly course with expert instructor Olivia.',
+  keywords: 'urban gardening course, container gardening, vertical gardening, small space gardening, beginner gardening course, online gardening class',
+  alternates: {
+    canonical: '/courses/urban-gardening',
+  },
+  openGraph: {
+    title: 'Urban Gardening Essentials Course | Sproutly',
+    description: 'Master urban gardening in 6 weeks! Learn container gardening, vertical gardens, and small space growing techniques.',
+    url: 'https://sproutly.site/courses/urban-gardening',
+    images: [
+      {
+        url: '/featured-course.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Urban Gardening Essentials Course by Sproutly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Urban Gardening Essentials Course | Sproutly',
+    description: 'Master urban gardening in 6 weeks! Learn container gardening, vertical gardens, and small space growing techniques.',
+    images: ['/featured-course.jpg'],
+  },
+};
 
 export default function UrbanGardeningPage() {
   const course = {
@@ -20,8 +49,50 @@ export default function UrbanGardeningPage() {
     startDate: 'June 15, 2023',
   };
 
+  const courseStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Urban Gardening Essentials",
+    "description": "Learn how to grow plants in limited urban spaces using containers, vertical gardens, and more.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Sproutly",
+      "url": "https://sproutly.site"
+    },
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "instructor": {
+        "@type": "Person",
+        "name": "Olivia",
+        "jobTitle": "Master Gardener"
+      },
+      "courseMode": "online",
+      "duration": "P6W",
+      "startDate": "2023-06-15",
+      "endDate": "2023-07-27"
+    },
+    "coursePrerequisites": "No prerequisites required",
+    "educationalLevel": "Beginner",
+    "inLanguage": "en",
+    "offers": {
+      "@type": "Offer",
+      "price": "199",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "47"
+    }
+  };
+
   return (
     <main className="min-h-screen relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseStructuredData) }}
+      />
       <Navbar />
       
       <section className="py-20 pt-32 px-4">
@@ -29,13 +100,13 @@ export default function UrbanGardeningPage() {
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-2/3">
               <ScrollReveal>
-                <nav className="flex mb-6 text-sm text-gray-500">
-                  <Link href="/" className="hover:text-primary">Home</Link>
-                  <span className="mx-2">/</span>
-                  <Link href="/courses" className="hover:text-primary">Courses</Link>
-                  <span className="mx-2">/</span>
-                  <span className="text-gray-800">{course.title}</span>
-                </nav>
+                <Breadcrumb 
+                  items={[
+                    { label: 'Courses', href: '/courses' },
+                    { label: course.title }
+                  ]}
+                  className="mb-6"
+                />
                 
                 <div className="relative h-[300px] sm:h-[400px] w-full rounded-2xl overflow-hidden mb-8">
                   <Image 

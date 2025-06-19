@@ -1,11 +1,40 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
+import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
+
+export const metadata: Metadata = {
+  title: 'Container Gardening Mastery Course | Balcony & Patio Gardens | Sproutly',
+  description: 'Master container gardening in 5 weeks! Perfect for balconies, patios, and small spaces. Learn plant selection, soil, drainage, and design. Intermediate level.',
+  keywords: 'container gardening course, balcony gardening, patio gardening, small space gardening, pot gardening, container plants',
+  alternates: {
+    canonical: '/courses/container-gardening',
+  },
+  openGraph: {
+    title: 'Container Gardening Mastery Course | Sproutly',
+    description: 'Master container gardening in 5 weeks! Perfect for balconies, patios, and small spaces. Learn plant selection, soil, drainage, and design.',
+    url: 'https://sproutly.site/courses/container-gardening',
+    images: [
+      {
+        url: '/project-containers.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Container Gardening Mastery Course by Sproutly',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Container Gardening Mastery Course | Sproutly',
+    description: 'Master container gardening in 5 weeks! Perfect for balconies, patios, and small spaces.',
+    images: ['/project-containers.jpg'],
+  },
+};
 
 export default function ContainerGardeningPage() {
   const course = {
