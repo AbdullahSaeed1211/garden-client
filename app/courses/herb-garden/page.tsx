@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
-import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
 

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
-import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import CreativeFooter from '@/components/CreativeFooter';
 
