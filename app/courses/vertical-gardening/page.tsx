@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { CursorHighlight } from '@/components/ui/cursor-highlight';
-import CourseRibbons from '@/components/CourseRibbons';
 import CreativeFooter from '@/components/CreativeFooter';
 
 export const metadata: Metadata = {
@@ -89,9 +88,7 @@ export default function VerticalGardeningPage() {
                   </div>
                 </div>
                 
-                <div className="-mx-4 my-12">
-                  <CourseRibbons />
-                </div>
+
                 
                 <div className="mb-12">
                   <h2 className="text-2xl font-bold mb-4">About This Course</h2>
